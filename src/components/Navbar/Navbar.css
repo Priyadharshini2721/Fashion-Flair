@@ -1,0 +1,75 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: fixed; /* Make the navbar float */
+  top: 0; /* Position the navbar at the top of the screen */
+  left: 0; /* Position the navbar at the left side of the screen */
+  width: 100%; /* Make the navbar take the full width of the screen */
+}
+
+/* Add padding to the top of the content to prevent overlap with the fixed navbar */
+.content {
+  padding-top: 70px; /* Adjust the value as needed to create enough space for the navbar */
+}
+.left-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.left-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.menu-item {
+  margin-left: 25px;
+  position: relative;
+}
+
+.menu-item a {
+  color: #666467;
+  text-decoration: none;
+}
+
+.right-menu img {
+  margin-right: 5px;
+}
+
+.right-menu a {
+  margin-left: 45px;
+}
+
+.menu-item:hover {
+  /* Add hover animation */
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:active {
+  /* Add click animation */
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}

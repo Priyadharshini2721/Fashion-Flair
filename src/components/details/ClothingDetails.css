@@ -1,0 +1,140 @@
+/* Set the height of the .clothing-details-screen to cover the entire viewport height */
+.clothing-details-screen {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    padding-top: 100px;
+    height: 80vh; /* Set the height to cover the entire viewport height */
+  }
+  
+  .clothing-details-left {
+    flex: 1; /* Make the left column take up the available height equally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  
+  .clothing-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%; /* Set the max-height to make the image cover the entire height of the left column */
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .clothing-details-right {
+    flex: 1; /* Make the right column take up the available height equally */
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+  }
+  
+  .clothing-title {
+    margin-top: 0rem;
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  
+  .clothing-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .clothing-price {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .add-to-cart-button {
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    transition: transform 0.1s ease-in-out;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+  }
+
+  .add-to-cart-button:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+
+  }
+  
+  .add-to-cart-button:active {
+    background-color: #515151; /* Change background color on click */
+    transform: scale(0.95); /* Scale down the button on click */
+  }
+  
+  .clothing-reviews {
+    margin-top: auto; /* Push the reviews section to the bottom of the right column */
+  }
+  
+  .star-ratings {
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  
+  .star-icon {
+    color: #d7d7d7; /* Default color for empty stars */
+    margin-right: 10px;
+  }
+  
+  .filled {
+    color: #646464; /* Color for filled stars */
+  }
+  
+
+  /* ... Other CSS styles ... */
+
+.right-card-content {
+    background-color: #fff;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ccc;*/
+  }
+  
+  /* ... Rest of the CSS ... */
+  
+
+.size-option {
+  /* Add your regular button styles here */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #3c3737;
+  width: 5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.size-option.selected {
+  /* Add your styles to indicate the selected button */
+  background-color: #030303;
+  color: #ffffff;
+}
+
+/* Add this animation to make the button shake horizontally */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}

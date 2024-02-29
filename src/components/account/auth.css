@@ -1,0 +1,119 @@
+html, body {
+  height: 90%;
+  margin: 0;
+}
+
+.auth {
+    margin:  15rem;
+    margin-top: 8rem;
+    padding-bottom: 40px;
+
+  }
+  
+  
+  .auth-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.10rem 0 0 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.10rem 0 0 1rem;
+  }
+  
+  
+  @media screen and (min-width: 400px) {
+    .auth-form-container {
+      padding: 5rem;
+      border-radius: 25px;
+      margin: 0.5rem;
+    }
+  }
+  
+  label {
+    text-align: left;
+    padding: 0.50rem 0;
+  }
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border : 1;
+    border-radius: 15px;
+  }
+  
+  @keyframes ripple {
+    to {
+      opacity: 0;
+      transform: scale(2.5);
+    }
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .logo-title {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  
+  button {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+   
+    animation: ripple;
+  }
+  
+  .login-button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+    background-color: #000000;
+    animation: ripple;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 1rem;
+  }
+
+  .gender-button{
+    color: #000000;
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 100px;
+    margin-right: 2rem;
+  }
+
+  .gender-button.selected {
+    /* Add your styles to indicate the selected button */
+    background-color: #030303;
+    color: #ffffff;
+  }
+
+  .login-button:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+  }
+  
+  .login-button:active {
+    background-color: #515151; /* Change background color on click */
+    transform: scale(0.95); /* Scale down the button on click */
+  }
+  
+  .link-btn {
+    background: none;
+    color: rgb(16, 14, 14);
+    text-decoration: underline;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+  }

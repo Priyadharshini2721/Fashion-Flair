@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height:100vh;
+  align-items: center;
+  justify-self: center;
+  
+}
+body {
+  background-image: url("/public/wallpaper.jpg"); /* Path to your image in the public folder */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
+  background-color: #05050594;
+  /* Additional styles for the background */
+}

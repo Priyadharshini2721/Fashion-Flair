@@ -1,0 +1,10 @@
+/* FullScreenImage.css */
+.full-screen-image {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    background-image: url('/public/home.png'); /* Adjust the path to your image if necessary */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }

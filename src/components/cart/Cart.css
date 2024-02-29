@@ -1,0 +1,86 @@
+/* Cart.css */
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-left: 15rem;
+    
+  }
+  
+  .cart-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .cart-list {
+    flex: 1;
+  }
+  
+  .cart-list-title {
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    margin-bottom: 1.5rem;
+    margin-right: 5rem;
+    margin-left: 0rem;
+    position: relative; /* Add relative positioning */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cart-item-image img {
+    width: 205px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .cart-summary-title {
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .remove-button {
+    font-size: 23px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    padding: 0px;
+    cursor: pointer;
+    position: absolute; /* Add absolute positioning */
+    top: 10px; /* Position the button at the bottom */ /* Position the button at the right */
+    right: 10px;
+  }
+  
+  .cart-summary {
+    flex: 1;
+  }
+  
+  .place-order-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add any other styles you need for the Cart component */
+  
